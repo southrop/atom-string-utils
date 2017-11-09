@@ -14,8 +14,7 @@
   },
   "keywords": [
   ],
-  "repository": "https://github.com/atom/string-utils",
-  "license": "MIT",
+  "repository": "https://github.com/southrop/atom-string-utils",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
