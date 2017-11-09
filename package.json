@@ -1,0 +1,24 @@
+{
+  "name": "string-utils",
+  "main": "./lib/string-utils",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationCommands": {
+    "atom-workspace": [
+      "string-utils:reverse-selection",
+      "string-utils:convert-spaces-to-tabs",
+      "string-utils:convert-tabs-to-spaces",
+      "string-utils:encode-to-base64",
+      "string-utils:decode-from-base64"
+    ]
+  },
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/string-utils",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
