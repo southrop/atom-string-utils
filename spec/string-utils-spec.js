@@ -133,7 +133,7 @@ describe('String Utils', () => {
     });
   });
 
-  describe('URL Notation Conversion', () => {
+  describe('URL Encoding Conversion', () => {
     it('does nothing to plain text if there is no selection', () => {
       editor.setText('http://localhost:30001/data?zip=47401&utc_begin=2013-8-1 00:00:00&utc_end=2013-8-2 00:00:00&country_code=USA');
       return activate('string-utils:encode-in-url-encoding', () => {
@@ -141,7 +141,7 @@ describe('String Utils', () => {
       });
     });
 
-    it('converts plain text into url notation', () => {
+    it('converts plain text into url encoding', () => {
       editor.setText('http://localhost:30001/data?zip=47401&utc_begin=2013-8-1 00:00:00&utc_end=2013-8-2 00:00:00&country_code=USA');
       editor.selectAll();
       return activate('string-utils:encode-in-url-encoding', () => {
@@ -149,14 +149,14 @@ describe('String Utils', () => {
       });
     });
 
-    it('does nothing to url notation text if there is no selection', () => {
+    it('does nothing to url encoding text if there is no selection', () => {
       editor.setText('http%3A%2F%2Flocalhost%3A30001%2Fdata%3Fzip%3D47401%26utc_begin%3D2013-8-1%2000%3A00%3A00%26utc_end%3D2013-8-2%2000%3A00%3A00%26country_code%3DUSA');
       return activate('string-utils:decode-from-url-encoding', () => {
         expect(editor.getText()).toBe('http%3A%2F%2Flocalhost%3A30001%2Fdata%3Fzip%3D47401%26utc_begin%3D2013-8-1%2000%3A00%3A00%26utc_end%3D2013-8-2%2000%3A00%3A00%26country_code%3DUSA');
       });
     });
 
-    it('converts url notation into plain text', () => {
+    it('converts url encoding into plain text', () => {
       editor.setText('http%3A%2F%2Flocalhost%3A30001%2Fdata%3Fzip%3D47401%26utc_begin%3D2013-8-1%2000%3A00%3A00%26utc_end%3D2013-8-2%2000%3A00%3A00%26country_code%3DUSA');
       editor.selectAll();
       return activate('string-utils:decode-from-url-encoding', () => {

@@ -14,16 +14,16 @@
             "command": "string-utils:convert-tabs-to-spaces"
           }, {
             "label": "Encode in Base64",
-            "command": "string-utils:encode-to-base64"
+            "command": "string-utils:encode-in-base64"
           }, {
             "label": "Decode from Base64",
             "command": "string-utils:decode-from-base64"
           }, {
-            "label": "Encode in Base64",
-            "command": "string-utils:encode-to-base64"
+            "label": "Encode in URL Encoding",
+            "command": "string-utils:encode-in-url-encoding"
           }, {
-            "label": "Decode from Base64",
-            "command": "string-utils:decode-from-base64"
+            "label": "Decode from URL Encoding",
+            "command": "string-utils:decode-from-url-encoding"
           }
         ]
       }
@@ -47,10 +47,16 @@
               "command": "string-utils:convert-tabs-to-spaces"
             }, {
               "label": "Encode in Base64",
-              "command": "string-utils:encode-to-base64"
+              "command": "string-utils:encode-in-base64"
             }, {
               "label": "Decode from Base64",
               "command": "string-utils:decode-from-base64"
+            }, {
+              "label": "Encode in URL Encoding",
+              "command": "string-utils:encode-in-url-encoding"
+            }, {
+              "label": "Decode from URL Encoding",
+              "command": "string-utils:decode-from-url-encoding"
             }
           ]
         }
