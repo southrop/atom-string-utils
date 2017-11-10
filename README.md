@@ -1,1 +1,1 @@
-# String Utils
+# String Utils for Atom [![Build Status](https://travis-ci.org/southrop/atom-string-utils.svg?branch=master)](https://travis-ci.org/southrop/atom-string-utils) [![https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)](https://ci.appveyor.com/project/southrop/atom-string-utils)
