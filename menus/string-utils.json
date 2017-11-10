@@ -13,7 +13,13 @@
             "label": "Convert Tabs to Spaces",
             "command": "string-utils:convert-tabs-to-spaces"
           }, {
-            "label": "Encode to Base64",
+            "label": "Encode in Base64",
+            "command": "string-utils:encode-to-base64"
+          }, {
+            "label": "Decode from Base64",
+            "command": "string-utils:decode-from-base64"
+          }, {
+            "label": "Encode in Base64",
             "command": "string-utils:encode-to-base64"
           }, {
             "label": "Decode from Base64",
@@ -40,7 +46,7 @@
               "label": "Convert Tabs to Spaces",
               "command": "string-utils:convert-tabs-to-spaces"
             }, {
-              "label": "Encode to Base64",
+              "label": "Encode in Base64",
               "command": "string-utils:encode-to-base64"
             }, {
               "label": "Decode from Base64",
