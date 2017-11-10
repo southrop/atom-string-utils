@@ -7,7 +7,7 @@ const StringUtils = require('../lib/string-utils');
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('StringUtils', () => {
+describe('String Utils', () => {
   let workspace, editor, activationPromise;
 
   let activate = (command, callback) => {
@@ -95,7 +95,7 @@ describe('StringUtils', () => {
     it('converts text into base64 successfully', () => {
       editor.setText('This is a test string!#%^$&\\n 1215あ啊');
       editor.selectAll();
-      return activate('string-utils:encode-base64', () => {
+      return activate('string-utils:encode-to-base64', () => {
         expect(editor.getText()).toBe('VGhpcyBpcyBhIHRlc3Qgc3RyaW5nISMlXiQmXG4gMTIxNeOBguWVig==');
       });
     });
@@ -103,7 +103,7 @@ describe('StringUtils', () => {
     it('converts base64 into text successfully', () => {
       editor.setText('VGhpcyBpcyBhIHRlc3Qgc3RyaW5nISMlXiQmXG4gMTIxNeOBguWVig==');
       editor.selectAll();
-      return activate('string-utils:decode-base64', () => {
+      return activate('string-utils:decode-from-base64', () => {
         expect(editor.getText()).toBe('This is a test string!#%^$&\\n 1215あ啊');
       });
     });
@@ -111,8 +111,8 @@ describe('StringUtils', () => {
     it('can undo itself', () => {
       editor.setText('This is a test string!#%^$&\\n 1215あ啊');
       editor.selectAll();
-      return activate('string-utils:encode-base64', () => {
-        return activate('string-utils:decode-base64', () => {
+      return activate('string-utils:encode-to-base64', () => {
+        return activate('string-utils:decode-from-base64', () => {
           expect(editor.getText()).toBe('This is a test string!#%^$&\\n 1215あ啊');
         });
       });
